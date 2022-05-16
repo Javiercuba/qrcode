@@ -30,5 +30,11 @@ function chengerInputCel(number) {
   //document.querySelector("div").innerHTML = number;
 }
 
-
+function saveContact() {
+  var dataContact = { 'First name': document.forms.first_name.value }
+  navigator.contacs.newContact(dataContact, onSucessContact);
+}
+function onSucessContact(contac) {
+  navigator.notification.alert('Contato criado','Contacts',"Done");
+}
 
