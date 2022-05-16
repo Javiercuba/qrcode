@@ -10,10 +10,11 @@ function generateQRCode() {
   
 
   let website = `https://wa.me/55${num}?text=${name}%20,%20${msg}`;
+  let salvarContato = `tel:${num}`;
   if (website) {
     let qrcodeContainer = document.getElementById("qrcode");
     qrcodeContainer.innerHTML = "";
-    new QRCode(qrcodeContainer, website);
+    new QRCode(qrcodeContainer, salvarContato);
     /*With some styles*/
 
     document.getElementById("qrcode-container").style.display = "block";
@@ -31,10 +32,7 @@ function chengerInputCel(number) {
 }
 
 function saveContact() {
-  var dataContact = { 'First name': document.forms.first_name.value }
-  navigator.contacs.newContact(dataContact, onSucessContact);
+  new QRCode(qrcodeContainer,salvarContato );
 }
-function onSucessContact(contac) {
-  navigator.notification.alert('Contato criado','Contacts',"Done");
-}
+
 
