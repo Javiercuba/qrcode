@@ -1,0 +1,31 @@
+<html lang="pt">
+  <head>
+    <title>QRCODE</title>
+
+    <meta charset="utf-8">
+    
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Mensagem automatica</h1>
+      <div id="qrcode-container">
+        <div id="qrcode" class="qrcode"></div>
+      </div>
+
+      <div>
+        <h3>Preencha o formulario</h3>
+
+        <input id="phone" type="tel" maxlength="15"
+          onkeyup="chengerInputCel(this.value)">
+        <input id="name" type="text" placeholder="name">
+        <input id="msg" type="text" placeholder="type msg">
+        <button onclick="generateQRCode()">send</button>
+
+      </div>
+    </div>
+  </body>
+
+</html>

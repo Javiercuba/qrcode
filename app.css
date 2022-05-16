@@ -1,0 +1,14 @@
+
+.form button:hover {
+  background: rgba(88,104,191, 0.5);
+}
+#qrcode-container{
+    display:none;
+}
+
+.qrcode{
+  padding: 16px;
+}
+.qrcode img{
+  margin: 0 auto;
+}
