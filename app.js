@@ -57,7 +57,7 @@ function SendMessage() {
     phone_number: "5522992427891",
     contact_phone_number: "5522998465678",
     message_type: "text",
-    message_body: "VAI enviada pela API 5544997681976",
+    message_body: "Esse é o teste oficial",
   };
   api
     .post("/api/WhatsGw/Send", data)
