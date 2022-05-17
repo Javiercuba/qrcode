@@ -38,6 +38,7 @@ function Link() {
 
 function RealizarTarefas() {
   //SendMessage();
-  Link();
-  EnviarMsg();
+  window.setInterval(Link(), 4000);
+ // window.setInterval(EnviarMsg(), 4000);
+  
 }
