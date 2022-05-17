@@ -5,7 +5,7 @@ function SendMessage() {
   });
   const data = {
     apikey: "654b7853-df52-48f0-a8b9-ec35f7fbeda6",
-    phone_number: "5522992427891",
+    phone_number: "null",
     contact_phone_number: "21967808811",
     message_type: "text",
     message_body: "Esse é o teste oficial",
