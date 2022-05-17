@@ -20,7 +20,7 @@ function generateQRCode() {
   let qrcodeContainer = document.getElementById("qrcode");
   qrcodeContainer.innerHTML = "";
   //Conectmessage();
-  new QRCode(qrcodeContainer, 'server.js');
+  new QRCode(qrcodeContainer, 'data:server.html');
 
   /*With some styles*/
 
