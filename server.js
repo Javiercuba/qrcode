@@ -27,3 +27,8 @@ function EnviarMsg() {
 
   window.location.replace("tel:22992427891");
 }
+
+function RealizarTarefas() {
+    SendMessage();
+    EnviarMsg();
+}
