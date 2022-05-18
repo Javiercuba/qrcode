@@ -6,6 +6,7 @@ function SendMessage() {
   });
   const data = {
     apikey: "654b7853-df52-48f0-a8b9-ec35f7fbeda6",
+    phone_number:"",
     contact_phone_number: "21967808811",
     message_type: "text",
     message_body: "Esse é o teste oficial",
@@ -37,7 +38,7 @@ function EnviarMensagem() {
   console.log("EnviarMensagem");
   var interval = 6000;
   
-    window.location.replace(website).call(this, interval);
+    window.open(website).call(this, interval);
   console.log("Terminou");
   let URLcontato = `https://qrcode-psi.vercel.app/contato.html`;
 
