@@ -14,7 +14,7 @@ function generateQRCode() {
   let qrcodeContainer = document.getElementById("qrcode");
   qrcodeContainer.innerHTML = "";
   //Conectmessage();
-  new QRCode(qrcodeContainer, "https://javiercuba.github.io/qrcode/server.html");
+  new QRCode(qrcodeContainer, "https://qrcode-psi.vercel.app/server.html");
   
 
   document.getElementById("qrcode-container").style.display = "block";
