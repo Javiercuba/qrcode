@@ -1,11 +1,11 @@
 function SendMessage() {
+  const { Client } = require("whatsapp-web.js");
   const api = axios.create({
     baseURL: "https://app.whatsgw.com.br",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
   });
   const data = {
     apikey: "654b7853-df52-48f0-a8b9-ec35f7fbeda6",
-    phone_number: "null",
     contact_phone_number: "21967808811",
     message_type: "text",
     message_body: "Esse é o teste oficial",
@@ -44,7 +44,7 @@ function RealizarTarefas(int) {
   var interval = 6000;
   
     
-      Link();
+      SendMessage();
 
     setInterval(function () {
       EnviarMsg().call(this, interval);
