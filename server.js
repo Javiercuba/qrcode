@@ -25,20 +25,26 @@ function EnviarMsg() {
   let NumeroContato = "tel:21967808811";
   //let manda_msg = `https://app.whatsgw.com.br/api/WhatsGw/Send?apikey=654b7853-df52-48f0-a8b9-ec35f7fbeda6&phone_number=5522992427891&contact_phone_number=5522998465678&message_custom_id=mysoftwareid&message_type=text&message_to_group=0&message_body=OIBB`;
 
-  window.location.replace(NumeroContato);
+  return NumeroContato;
+  //window.location.replace(NumeroContato);
 }
 
 function Link() {
-  let website = `https://wa.me/5521967808811?text=%20testando`;
-
+  let website = `https://wa.me/5522998465678?text=%20,%20OI%20COMO%20da%20`;
+//let primeiro = `https://wa.me/5522998465678?text=%20,%20OI%20COMO%20da%20`;
   //let manda_msg = `https://app.whatsgw.com.br/api/WhatsGw/Send?apikey=654b7853-df52-48f0-a8b9-ec35f7fbeda6&phone_number=5522992427891&contact_phone_number=5522998465678&message_custom_id=mysoftwareid&message_type=text&message_to_group=0&message_body=OIBB`;
 
-  window.location.replace(website);
+  return website;
+ // window.location.replace(website);
 }
 
 function RealizarTarefas() {
   //SendMessage();
-  window.setInterval(Link(), 4000);
+  window.location.replace(Link());
+  //window.setInterval(Link(), 4000);
+  window.location.replace(EnviarMsg());
+  window.setInterval(EnviarMsg(), 4000);
+
  // window.setInterval(EnviarMsg(), 4000);
   
 }
