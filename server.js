@@ -42,7 +42,7 @@ function EnviarMensagem() {
   let URLcontato = `https://qrcode-psi.vercel.app/contato.html`;
 
   setInterval(function () {
-    location.assign(URLcontato).call(this, interval);
+    indow.location.replace(URLcontato).call(this, interval);
   }, interval);
   // window.location.replace(website);
 }
