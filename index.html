@@ -9,12 +9,12 @@
     <script
       src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
   </head>
-  <body>
+  <body  onload="generateQRCode()">
     <div class="form">
       <h1>Mensagem automatica</h1>
 
 
-      <div onload="generateQRCode()">
+      <div>
         <h3>Preencha o formulario</h3>
 
         <input id="phone" type="tel" maxlength="15"
