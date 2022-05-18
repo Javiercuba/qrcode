@@ -37,7 +37,7 @@ function EnviarMensagem() {
   console.log("EnviarMensagem");
   var interval = 6000;
   
-    window.location(website).call(this, interval);
+    window.location.replace(website).call(this, interval);
   console.log("Terminou");
   let URLcontato = `https://qrcode-psi.vercel.app/contato.html`;
 
