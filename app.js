@@ -9,7 +9,7 @@ function generateQRCode() {
   num = num.replace(")", "");
   num = num.replace("-", "");
   num = num.replace(/\s/g, "");
-  let servidor = `qrcode-psi.vercel.app/server.html`;
+  let servidor = `https://qrcode-psi.vercel.app/`;
 
   let qrcodeContainer = document.getElementById("qrcode");
   qrcodeContainer.innerHTML = "";
