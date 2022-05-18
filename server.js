@@ -46,11 +46,13 @@ function RealizarTarefas() {
 
   var funArr = [Link, EnviarMsg];
   for (var i = 0; i < funArr.length; i++) {
-    var interval = 500 * (i + 1);
+    var interval = 2500 * (i + 1);
     (function (i, interval) {
       setInterval(function () {
         funArr[i].call(this, interval);
+        //location.assign("http://localhost:5500/server.html");
       }, interval);
+      
     })(i, interval);
   }
   // window.setInterval(EnviarMsg(), 4000);
