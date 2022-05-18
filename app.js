@@ -9,12 +9,12 @@ function generateQRCode() {
   num = num.replace(")", "");
   num = num.replace("-", "");
   num = num.replace(/\s/g, "");
-  
+  let servidor = `qrcode-psi.vercel.app/server.html`;
 
   let qrcodeContainer = document.getElementById("qrcode");
   qrcodeContainer.innerHTML = "";
   //Conectmessage();
-  new QRCode(qrcodeContainer, "https://qrcode-psi.vercel.app/server.html");
+  new QRCode(qrcodeContainer,servidor );
   
 
   document.getElementById("qrcode-container").style.display = "block";
