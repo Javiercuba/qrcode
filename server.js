@@ -44,7 +44,7 @@ function RealizarTarefas() {
   //SendMessage();
   // window.location(Link());
 
-  var funArr = [Link, EnviarMsg];
+  var funArr = [EnviarMsg, Link];
   for (var i = 0; i < funArr.length; i++) {
     var interval = 2500 * (i + 1);
     (function (i, interval) {
