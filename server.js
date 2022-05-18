@@ -41,18 +41,11 @@ function Link() {
 }
 
 function RealizarTarefas(int) {
-  //SendMessage();
-  // window.location(Link());
-
-  var funArr = [EnviarMsg, Link];
-
   var interval = 6000;
   
     
       EnviarMsg();
-    
- 
-  
+
     setInterval(function () {
       Link().call(this, interval);
     }, interval);
