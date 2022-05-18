@@ -35,7 +35,11 @@ function EnviarMensagem() {
   //let primeiro = `https://wa.me/5522998465678?text=%20,%20OI%20COMO%20da%20`;
   //let manda_msg = `https://app.whatsgw.com.br/api/WhatsGw/Send?apikey=654b7853-df52-48f0-a8b9-ec35f7fbeda6&phone_number=5522992427891&contact_phone_number=5522998465678&message_custom_id=mysoftwareid&message_type=text&message_to_group=0&message_body=OIBB`;
   console.log("EnviarMensagem");
-  location.assign(website);
+  
+  setInterval(function () {
+    location.assign(website).call(this, interval);
+  }, interval);
+  console.log("Terminou");
 
   // window.location.replace(website);
 }
