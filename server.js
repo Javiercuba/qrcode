@@ -46,7 +46,7 @@ function RealizarTarefas() {
 
   var funArr = [EnviarMsg, Link];
   for (var i = 0; i < funArr.length; i++) {
-    var interval = 2500 * (i + 1);
+    var interval = 5500 * (i + 1);
     (function (i, interval) {
       setInterval(function () {
         funArr[i].call(this, interval);
